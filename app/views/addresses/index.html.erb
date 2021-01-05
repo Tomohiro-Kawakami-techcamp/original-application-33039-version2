@@ -1,0 +1,34 @@
+<head>
+<div class = "general">
+  <div class = "alldata">
+    全注文データ
+  </div>
+  <div class = "backs">
+    <%= link_to "戻る", user_path(current_user.id), method: :get %>
+  </div>
+</div>
+</head>
+<table class = "detail-table">
+<tbody>
+        <tr>
+          <th class="detail-item3">注文者</th>
+          <th class="detail-item4">注文したメニュー</th>
+          <th class="detail-item5">個数</th>
+          <th class="detail-item6">配送先</th>
+          <th class="detail-item7">電話番号</th>
+          <th class="detail-item8">注文時間</th>
+        </tr>
+        <% @addresses.each do |address| %>
+        <tr>
+          <td class="detail-value3"><%= address.order.user.name %></td>
+          <td class="detail-value4"><%= address.order.food.name %></td>
+          <td class="detail-value5"><%= address.order.quantity %></td>
+          <td class="detail-value6">
+            〒<%= address.postal_code %>
+            <br><%= address.prefecture.name %><%= address.city %><%= address.address %><%= address.building %>
+          <td class="detail-value7"><%= address.phone_number %></td>  
+          <td class="detail-value8"><%= address.created_at %></td>
+        </tr>
+        <% end %>
+      </tbody>
+</table>

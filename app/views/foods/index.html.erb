@@ -1,0 +1,45 @@
+<%= render "shared/header" %>
+
+<div class = "head">
+  <div class = "greeting">
+    いらっしゃいませ！！<br>来店ありがとうございます。
+  </div>
+    <% if user_signed_in? %>
+    <% if current_user.id == 1 %>
+    <%= link_to(new_food_path, class: 'purchase-btn') do %>
+    <span class='purchase-btn-text'>出品</span>
+    <% end %>
+    <% end %>
+    <% end %>
+  <div class = "image">
+   <%= image_tag "aly!.jpg", size: '400x300', class:"list-pict" %>
+   <%= image_tag "IMG_1023.jpg", size: '400x300', class:"list-pict" %>
+  </div>
+</div>
+<div class='item-contents'>
+    <div class = "item-arrange">
+      <h2 class = "arrange">メニュー一覧</h2>
+    </div>
+<ul class='item-lists'>
+      <% @foods.each do |food| %>
+      <li class='list'>
+        <%= link_to food_path(food.id) do %>
+        <div class='item-img-content'>
+          <%= image_tag food.image, size: '400x300', class: "item-img" %>
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= food.name %>
+          </h3>
+          <div class='item-price'>
+            <span>金額：<%= food.price %>円</span>
+            <div class='star-btn'>
+              <span class='star-count'><%= "送料無料" %></span>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+</ul>
+</div>

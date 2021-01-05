@@ -1,0 +1,55 @@
+<header>
+<div class = "header-top">
+<ul>
+  <h3 class= "greeting">こんにちは<%= @user.name %>さん</h3>
+</ul>
+<% if user_signed_in? %>
+<ul class = "lists-right">
+  <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout1"  %>
+</ul>
+<% end %>
+</div>
+
+</header>
+<body>
+<div class= "main">
+  <h1 class = "title">ユーザートップページ</h1>
+</div>
+<div class = "body">
+<% if @user.id == 1 %>
+  <div class = "user">
+    <%= link_to "注文一覧・配送先",addresses_path, model: :get  %>
+  </div>
+  <div class = "produce">
+    <%= link_to "出品ページ",new_food_path, model: :get  %>
+  </div>
+<% else%>
+<div class = "buy">
+ <%= link_to "注文履歴", food_order_path(@user.id), method: :get %>
+ </div>
+<% end %>
+<div class = "item">
+<%= link_to "商品ページへ",root_path  %>
+</div>
+<div class = "change">
+<%= link_to "登録情報変更",edit_user_path(@user.id), method: :get  %>
+</div>
+</div>
+
+<div>
+ <h1 class = "information">登録情報</h1>
+</div>
+<table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item1">名前</th>
+          <td class="detail-value1"><%= @user.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item2">メールアドレス</th>
+          <td class="detail-value2"><%= @user.email %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>

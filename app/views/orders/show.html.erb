@@ -1,0 +1,22 @@
+<div class = "head1">
+  <h4 class = "thanks">ご利用ありがとうございます。</h4>
+  <h4 class = "backs"><%= link_to "戻る", user_path(current_user.id), method: :get %><h4>
+</div>
+<div  class = "mainbody">
+<table class = "detail-table">
+<tbody>
+        <tr>
+          <th class="detail-item9">注文した商品</th>
+          <th class="detail-item10">個数</th>
+          <th class="detail-item11">購入日時</th>
+        </tr>
+        <% @orders.each do |order| %>
+        <tr>
+          <td class="detail-value9"><%= order.food.name %></td>
+          <td class="detail-value10"><%= order.quantity %></td>
+          <td class="detail-value11"><%= order.created_at %></td>
+        </tr>
+        <% end %>
+      </tbody>
+</table>
+</div>
