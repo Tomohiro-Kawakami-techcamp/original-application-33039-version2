@@ -20,6 +20,7 @@
 | Column              | Type       | Options                        |
 | ------------------- | ---------- | ------------------------------ |
 | quantity            | integer    | null: false                    |
+| time                | string     | null: false                    |
 | user                | references | null: false, foreign_key: true | 
 | food                | references | null: false, foreign_key: true |
 
