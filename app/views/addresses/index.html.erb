@@ -16,6 +16,7 @@
           <th class="detail-item5">個数</th>
           <th class="detail-item6">配送先</th>
           <th class="detail-item7">電話番号</th>
+          <th class="detail-item12">お届け時間</th>
           <th class="detail-item8">注文時間</th>
         </tr>
         <% @addresses.each do |address| %>
@@ -26,7 +27,8 @@
           <td class="detail-value6">
             〒<%= address.postal_code %>
             <br><%= address.prefecture.name %><%= address.city %><%= address.address %><%= address.building %>
-          <td class="detail-value7"><%= address.phone_number %></td>  
+          <td class="detail-value7"><%= address.phone_number %></td>
+          <td class="detail-value12"><%= address.order.time %></td>
           <td class="detail-value8"><%= address.created_at %></td>
         </tr>
         <% end %>

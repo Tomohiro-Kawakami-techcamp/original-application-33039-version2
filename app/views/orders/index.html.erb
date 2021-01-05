@@ -12,7 +12,11 @@
           <%= @food.name %>
         </h2>
         <div class='buy-item-price'>
-          <p class='item-price-text'>単価：¥<%= @food.price %><br>個数：<%= f.text_field 'quantity', class:"quantity", id:"quantity", placeholder:"1", maxlength:"3" %></p>
+          <p class='item-price-text'>
+          単価：¥<%= @food.price %>
+          <br>個数：<%= f.text_field 'quantity', class:"quantity", id:"quantity", placeholder:"1", maxlength:"2" %>
+          <br>お届け時間：<%= f.text_field 'time', class:"time", id:"time", placeholder:"12:00", maxlength:"5" %>
+          </p>
           <p class='item-price-sub-text'><%#= @item.shipping_fee_status.name %></p>
         </div>
       </div>

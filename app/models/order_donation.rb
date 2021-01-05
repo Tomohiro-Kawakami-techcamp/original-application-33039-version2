@@ -1,9 +1,10 @@
 class OrderDonation
   include ActiveModel::Model
-  attr_accessor :quantity, :user_id, :food_id, :postal_code, :prefecture_id, :city, :address, :building, :phone_number
+  attr_accessor :quantity, :time, :user_id, :food_id, :postal_code, :prefecture_id, :city, :address, :building, :phone_number
 
   with_options presence: true do
   validates :quantity
+  validates :time
   validates :postal_code, format: { with: /\A[0-9]{3}-[0-9]{4}\z/, message: "input correctly" }
   validates :city
   validates :address
@@ -16,7 +17,7 @@ class OrderDonation
   validates :phone_number, format: { with: /\A[0-9]{,11}\z/, message: "is less than 11 number characters" }
 
   def save
-    order = Order.create(quantity: quantity, user_id: user_id, food_id: food_id)
+    order = Order.create(quantity: quantity, time: time, user_id: user_id, food_id: food_id)
     Address.create(postal_code: postal_code, prefecture_id: prefecture_id, city: city, address: address, building: building, phone_number: phone_number, order_id: order.id)
   end
 end

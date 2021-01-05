@@ -23,7 +23,7 @@ class OrdersController < ApplicationController
 
   private
   def donation_params
-    params.require(:order_donation).permit(:quantity, :postal_code, :prefecture_id, :city, :address, :building, :phone_number).merge(user_id: current_user.id, food_id: params[:food_id])
+    params.require(:order_donation).permit(:quantity, :time, :postal_code, :prefecture_id, :city, :address, :building, :phone_number).merge(user_id: current_user.id, food_id: params[:food_id])
   end
 
   def set_item
