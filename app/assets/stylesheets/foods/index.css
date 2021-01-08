@@ -6,7 +6,14 @@ a {
   text-align: center;
 }
 
-.greeting{
+.greeting2{
+  font-size: 5vh;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.greeting1{
   font-size: 5vh;
 }
 
@@ -112,4 +119,10 @@ a {
 
 .list{
   list-style: none;
+}
+
+.another-menu{
+  display: flex;
+  text-align: right;
+  font-size: 20px;
 }

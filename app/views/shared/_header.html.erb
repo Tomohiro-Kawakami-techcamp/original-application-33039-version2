@@ -1,12 +1,13 @@
 <header class='top-page-header'>
 <div class='nav'>
 <div class='lists-left'>
-  <%#= link_to 'カテゴリー', "#", class: "category-list" %></li>
+  <%= link_to '口コミを見る', comments_path, method: :get, class: "category-list" %></li>
+  <% if user_signed_in? && current_user.id != 1 %>
+  <%= link_to '口コミを書く', new_comment_path, method: :get, class: "category-list" %></li>
+  <% end %>
 </div>
 <% if user_signed_in? %>
-  <div class="greeting">
   <%= link_to current_user.name, "users/#{current_user.id}", class: :greeting__link%>
-  </div>
   <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"  %>
 <% else %>
  <ul class='lists-right'>

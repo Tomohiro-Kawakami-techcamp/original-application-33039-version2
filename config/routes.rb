@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   end
   resources :users, only: [:index, :show, :edit, :update]
   resources :addresses, only: [:index]
+  resources :comments, only:[:index, :new, :create]
 end

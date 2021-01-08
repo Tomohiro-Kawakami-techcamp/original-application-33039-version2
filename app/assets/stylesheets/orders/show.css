@@ -7,7 +7,7 @@
   width: 30%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -15,23 +15,23 @@
   width: 30%;
   padding: 20px;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
 .detail-item10 {
-  width: 30%;
+  width: 20%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
 .detail-value10 {
-  width: 30%;
+  width: 20%;
   padding: 20px;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@
   width: 30%;
   background-color: #eee;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -48,24 +48,35 @@
   width: 30%;
   padding: 20px;
   border: 1px solid #dedede;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
 .head1{
-  display: flex;
   justify-content: space-between;
 }
 
 .thanks{
-  font-size: 25px;
-  color: red;
-  text-align: center;
+  font-size: 30px;
+  text-align: left;
+   margin-left: 40px;
 }
 
 .backs{
   font-size: 25px;
+  text-align: right;
+  margin-right: 40px;
 }
 .mainbody{
   margin-top: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-title{
+  text-align: center;
+  font-size: 40px;
+  background-color: red;
+  color: white;
 }

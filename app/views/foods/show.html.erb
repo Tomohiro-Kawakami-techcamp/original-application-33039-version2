@@ -23,7 +23,7 @@
       <%= link_to '削除', food_path(@food.id), method: :delete, class:'item-destroy' %>
       <%# 商品が売れていない場合はこちらを表示しましょう %>
       <% else %>
-          <%= link_to '購入画面に進む', food_orders_path(@food.id) ,class:"item-red-btn"%>
+          <%= link_to '注文画面に進む', food_orders_path(@food.id) ,class:"item-red-btn"%>
       <% end %>
     <% end %>
   <div class = "foot">

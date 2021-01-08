@@ -1,7 +1,7 @@
 <%= render "shared/header" %>
 
 <div class = "head">
-  <div class = "greeting">
+  <div class = "greeting2">
     いらっしゃいませ！！<br>来店ありがとうございます。
   </div>
     <% if user_signed_in? %>
@@ -20,7 +20,7 @@
     <div class = "item-arrange">
       <h2 class = "arrange">メニュー一覧</h2>
     </div>
-<ul class='item-lists'>
+  <ul class='item-lists'>
       <% @foods.each do |food| %>
       <li class='list'>
         <%= link_to food_path(food.id) do %>
@@ -41,5 +41,5 @@
         <% end %>
       </li>
       <% end %>
-</ul>
+ </ul>
 </div>

@@ -4,6 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
          has_many :tickets
+         has_many :comments
          enum admin: {normal: 0, staff:1}
   
          validates :email,  presence: true

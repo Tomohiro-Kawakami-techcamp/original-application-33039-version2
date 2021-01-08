@@ -1,0 +1,20 @@
+<div class = "comment-top">
+  <h4 class = "comment-all">口コミ一覧</h4>
+  <h4 class = "back-to-index"><%= link_to "戻る", foods_path %><h4>
+</div>
+<div  class = "commentbody">
+<table class = "detail-table-general">
+     <tbody>
+        <tr>
+          <th class="detail-comment1">投稿者</th>
+          <th class="detail-comment2">コメント</th>
+        </tr>
+        <% @comments.each do |comment| %>
+        <tr>
+          <td class="detail-comment-value1"><%= comment.nickname %></td>
+          <td class="detail-comment-value2"><%= comment.message %></td>
+        </tr>
+        <% end %>
+      </tbody>
+</table>
+</div>

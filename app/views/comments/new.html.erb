@@ -1,0 +1,12 @@
+<%= form_with model: @comment, url: comments_path, local: true do |f| %>
+<div class = "comment-top">
+  <h4 class = "comment1">コメント投稿</h4>
+  <%= f.text_field :nickname, class:"nickname-input", id:"item-price", placeholder:"例)匿名希望" %>
+  <p></p>
+  <%= f.text_area :message, class:"comments-text", id:"item-info", placeholder:"サービス向上のため是非とも建設的な意見をお願いします。(1,000文字まで)" ,rows:"7" ,maxlength:"1000" %>
+</div>
+<div class = "comment2">
+  <%= f.submit "投稿する" ,class:"comment-btn1" %>
+  <br><%=link_to 'メニュー一覧へもどる', root_path, class:"back-btn2" %>
+</div>
+<% end %>

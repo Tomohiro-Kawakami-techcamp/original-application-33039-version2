@@ -9,6 +9,8 @@ a {
 
 .title{
   background-position: top center;
+  text-align: center;
+  font-size: 40px;
 }
 
 .header-top{
@@ -32,7 +34,6 @@ a {
 
 .logout1{
   text-decoration: none;
-  color: white;
 }
 
 .greeting{
@@ -41,7 +42,10 @@ a {
 }
 
 .information{
- text-align: center; 
+ text-align: center;
+ background-color: green;
+ color: white;
+ font-size: 30px;
 }
 
 .body{
@@ -86,4 +90,8 @@ a {
   padding: 20px;
   border: 1px solid #dedede;
   font-size: 20px;
+}
+
+.username{
+  color: blue;
 }
