@@ -4,11 +4,14 @@
     <h1 class='form-header-text'>
       登録情報変更
     </h1>
+    <div class = "user-edit">
+      <%=link_to '戻る', user_path(current_user.id) %>
+    </div>
   </div>
 
 
   <%= render 'shared/error_messages', model: f.object %>
-
+<br>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">お名前(全角)</label>
@@ -51,7 +54,7 @@
   </div>
   <p></p>
   <div class='register-btn'>
-    <%= f.submit "変更登録" ,class:"register-red-btn" %>
+    <%= f.submit "変更登録" ,class:"sell-btn" %>
   </div>
 </div>
 <% end %>
