@@ -62,6 +62,7 @@
 
 .category-list {
   text-decoration: none;
+  line-height: 32px;
   margin-right: 3vw;
   color: #333333;
 }
@@ -101,4 +102,11 @@
 .sign-up {
   text-decoration: none;
   color: #333333;
+}
+
+.customer{
+  text-decoration: none;
+  margin-right: 3vw;
+  color: red;
+  font-weight: bold;
 }

@@ -8,7 +8,7 @@ class User < ApplicationRecord
          enum admin: {normal: 0, staff:1}
   
          validates :email,  presence: true
-         validates :password,  presence: true, format: { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i, message: 'Include both letters and numbers' }
+         validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i, message: 'Include both letters and numbers' }
          validates :name,  presence: true
          validates :name_kana,  presence: true
 end
