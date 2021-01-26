@@ -2,6 +2,9 @@
   <h4 class = "comment-all">口コミ一覧</h4>
   <h4 class = "back-to-index"><%= link_to "戻る", foods_path %><h4>
 </div>
+<div class = "page">
+  <%= paginate @comments %>
+</div>
 <div  class = "commentbody">
 <table class = "detail-table-general">
      <tbody>
