@@ -3,7 +3,7 @@ class OrderDonation
   attr_accessor :quantity, :time, :user_id, :food_id, :postal_code, :prefecture_id, :city, :address, :building, :phone_number
 
   with_options presence: true do
-  validates :quantity
+  validates :quantity,  presence: true, numericality: { with: /\A[0-9]+\z/, message: "is Half-width number" }
   validates :time
   validates :postal_code, format: { with: /\A[0-9]{3}-[0-9]{4}\z/, message: "input correctly" }
   validates :city
