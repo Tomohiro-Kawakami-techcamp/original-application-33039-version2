@@ -6,17 +6,17 @@ RSpec.describe Comment, type: :model do
       @comment = FactoryBot.build(:comment)
     end
 
-    it "全て記入すれば投稿できること" do
+    it "メッセージ、ニックネームを書けば投稿できること" do
       expect(@comment).to be_valid
     end
 
-    it "nicknameが空では投稿できないこと" do
+    it "ニックネームが空ではやり取りできないこと" do
       @comment.nickname = nil
       @comment.valid?
       expect(@comment.errors.full_messages).to include("Nickname can't be blank")
     end
 
-    it "messageが空では投稿できないこと" do
+    it "メッセージが空ではやり取りできないこと" do
       @comment.message = nil
       @comment.valid?
       expect(@comment.errors.full_messages).to include("Message can't be blank")

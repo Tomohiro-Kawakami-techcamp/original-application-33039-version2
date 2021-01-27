@@ -1,8 +1,7 @@
 FactoryBot.define do
   factory :comment do
-    nickname {"匿名"}
-    message { "よかったです。" }
-    
-    association :user
+      nickname {"hoge"}
+      message {"よろしくお願いします。"}
+      association :user
   end
 end

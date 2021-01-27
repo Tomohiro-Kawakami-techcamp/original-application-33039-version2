@@ -76,7 +76,6 @@ RSpec.describe User, type: :model do
     it "name_kanaがカタカナ以外では登録できないこと" do
       @user.name_kana = "山田"
       @user.valid?
-      binding.pry
       expect(@user.errors.full_messages).to include("Name kana Full-width katakana characters")
     end
   end

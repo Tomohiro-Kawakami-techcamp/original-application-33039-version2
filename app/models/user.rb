@@ -3,7 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-         has_many :tickets
+         has_many :orders
+         has_many :foods
          has_many :comments
          enum admin: {normal: 0, staff:1}
   

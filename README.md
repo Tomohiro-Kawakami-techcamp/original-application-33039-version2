@@ -14,6 +14,32 @@
 ### Association
 - has_many :foods
 - has_many :orders
+- has_many :comments
+
+## foods テーブル
+
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | ------------------------------ |
+| name                   | string     | null: false                    |
+| price                  | integer    | null: false                    |
+| user                   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- has_one    :order
+
+## comments テーブル
+
+| Column                 | Type       | Options                        |
+| ---------------------- | ---------- | ------------------------------ |
+| nickname               | string     | null: false                    |
+| message                | text       | null: false                    |
+| user                   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
 
 ## orders テーブル
 
@@ -30,15 +56,18 @@
 - belongs_to :item
 - has_one    :address
 
-## foods テーブル
+## addresses テーブル
 
-| Column                 | Type       | Options                        |
-| ---------------------- | ---------- | ------------------------------ |
-| name                   | string     | null: false                    |
-| price                  | integer    | null: false                    |
-| user                   | references | null: false, foreign_key: true |
+| Column              | Type       | Options                        |
+| ------------------- | ---------- | ------------------------------ |
+| postal_code         | string     |                                |
+| prefecture_id       | integer    |                                |
+| city                | string     |                                |
+| address             | string     |                                |
+| building            | string     |                                |
+| phone_number        | string     |                                |
+| order               | references | null: false, foreign_key: true |
 
 ### Association
 
-- belongs_to :user
-- has_one    :order
+- belongs_to :order
