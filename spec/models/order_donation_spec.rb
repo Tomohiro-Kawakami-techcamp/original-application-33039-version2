@@ -63,6 +63,12 @@ RSpec.describe OrderDonation, type: :model do
       expect(@order_donation.errors.full_messages).to include("Time can't be blank")
     end
 
+    it "時間の入力を間違えると購入できないこと" do
+      @order_donation.time = "12/12"
+      @order_donation.valid?
+      expect(@order_donation.errors.full_messages).to include("Time input correctly")
+    end
+
     it "user_idが空だと購入できないこと" do
       @order_donation.user_id = nil
       @order_donation.valid?
