@@ -4,7 +4,7 @@ class OrderDonation
 
   with_options presence: true do
   validates :quantity,  presence: true, numericality: { with: /\A[0-9]+\z/, message: "is Half-width number" }
-  validates :time
+  validates :time, format: { with: /\A([0-1][0-9]|[2][0-3]):([0-5][0-9])\z/, message: "input correctly" }
   validates :postal_code, format: { with: /\A[0-9]{3}-[0-9]{4}\z/, message: "input correctly" }
   validates :city
   validates :address
