@@ -20,16 +20,13 @@
   <div class = "user">
     <%= link_to "注文一覧・配送先",addresses_path, model: :get  %>
   </div>
-  <div class = "produce">
-    <%= link_to "出品ページ",new_food_path, model: :get  %>
-  </div>
 <% else%>
 <div class = "buy">
  <%= link_to "注文履歴", food_order_path(@user.id), method: :get %>
  </div>
 <% end %>
 <div class = "item">
-<%= link_to "商品ページへ",root_path  %>
+<%= link_to "商品ページ",root_path  %>
 </div>
 <div class = "change">
 <%= link_to "登録情報変更", edit_user_path(@user.id), method: :get  %>
