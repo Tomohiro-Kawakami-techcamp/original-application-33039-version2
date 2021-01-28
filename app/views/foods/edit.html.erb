@@ -7,7 +7,6 @@
 
     <%= render 'shared/error_messages', model: f.object %>
 
-    <%# 出品画像 %>
     <div class="img-upload">
       <div class="weight-bold-text">
         商品イメージ
@@ -20,7 +19,7 @@
         <%= f.file_field :image, id:"item-image" %>
       </div>
     </div>
-    <%# /出品画像 %>
+
     <div class="new-items">
       <div class="weight-bold-text">
         商品名
@@ -28,9 +27,7 @@
       </div>
       <%= f.text_area :name, class:"items-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
     </div>
-    <%# /商品名と商品説明 %>
 
-    <%# 販売価格 %>
     <div class="sell-price">
       <div class="weight-bold-text question-text">
         <span>販売価格</span>
@@ -47,15 +44,12 @@
         </span>
       </div>
     </div>
-    <%# /販売価格 %>
 
-    <%# 下部ボタン %>
     <p></p>
     <div class="sell-btn-contents">
       <%= f.submit "変更する" ,class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
-    <%# /下部ボタン %>
   </div>
   <% end %>
 </div>
