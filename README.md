@@ -1,6 +1,5 @@
 # カフェ
 
-
 # 概要
 
 
@@ -38,9 +37,17 @@
 
 # 実装予定の機能
 
+- メニューをドリンク、フード、サイドメニューのように分けて表示する機能
+- カテゴリー別に分けた後、検索する機能
 
 # ローカルでの動作方法
 
+- $ cd original-application-33039-version2
+- $ bundle install
+- $ rails db:create
+- $ rails db:migrate
+- $ rails s
+- http://localhost:3000
 
 # DB設計
 
