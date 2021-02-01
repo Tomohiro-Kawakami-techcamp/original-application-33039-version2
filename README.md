@@ -29,6 +29,7 @@
 ![demo](https://gyazo.com/d6491bc2328f1f43e07425c0489c1377/raw)
 ![demo](https://gyazo.com/d2e735041e71a384da4cf5f6941476e7/raw)
 ![demo](https://gyazo.com/cb76b2b3a20beff66357f17c03b7e776/raw)
+![demo](https://gyazo.com/5fec6d362cb55751d5ffde0460e0a80a/raw)
 
 #### ③お客さんの場合
 ##### (1) 注文
