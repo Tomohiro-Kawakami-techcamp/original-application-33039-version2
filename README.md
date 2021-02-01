@@ -21,13 +21,13 @@
 
 #### ②オーナーの場合
 ##### (1) 出品
+##### ※必要事項を入力して出品されます
 ![demo](https://gyazo.com/02f428d1e20000a6d94c4a308e73a385/raw)
 
 ##### (2) 編集・削除
-##### 削除ボタンを押せば削除される
+##### ※削除ボタンを押せば削除されます
 ![demo](https://gyazo.com/d6491bc2328f1f43e07425c0489c1377/raw)
 ![demo](https://gyazo.com/d2e735041e71a384da4cf5f6941476e7/raw)
-![demo](https://gyazo.com/9d9ef32df5c773c9917572504ddaa455/raw)
 
 #### ③お客さんの場合
 ##### (1) 注文
