@@ -20,18 +20,18 @@
 
 #### ②オーナーの場合
 ##### (1) 出品
-https://gyazo.com/02f428d1e20000a6d94c4a308e73a385
+![demo](https://gyazo.com/02f428d1e20000a6d94c4a308e73a385/raw)
 
 ##### (2) 編集・削除
 ##### 削除ボタンを押せば削除される
-https://gyazo.com/e792ec08afd36edd45b01a9b80ca0807
+![demo](https://gyazo.com/e792ec08afd36edd45b01a9b80ca0807/raw)
 
 #### ③お客さんの場合
 ##### (1) 注文
-https://gyazo.com/93be73398f37bd600ff07355fc020f0c
+![demo](https://gyazo.com/93be73398f37bd600ff07355fc020f0c/raw)
 
 ##### (2) コメント投稿
-https://gyazo.com/3e9c68ed432ded65923fb921aa1120ac
+![demo](https://gyazo.com/3e9c68ed432ded65923fb921aa1120ac/raw)
 
 # 目指したい課題解決
 
