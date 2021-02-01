@@ -26,7 +26,6 @@
 
 ##### (2) 編集・削除
 ##### 削除ボタンを押せば削除される
-![demo](https://gyazo.com/e792ec08afd36edd45b01a9b80ca0807/raw)
 ![demo](https://gyazo.com/d6491bc2328f1f43e07425c0489c1377/raw)
 ![demo](https://gyazo.com/d2e735041e71a384da4cf5f6941476e7/raw)
 ![demo](https://gyazo.com/7a1178ed9567c020f0700e46a983f409/raw)
