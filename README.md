@@ -16,15 +16,20 @@
 # 利用方法
 
 #### ①新規登録・ログイン
+##### こちらのフォームに必要事項を記入のうえ、登録できます。ログインは、メールアドレスとパスワード
 <img width="937" alt="78b8666f700bd1d76f4461f57d9088e8" src="https://user-images.githubusercontent.com/75296964/106417883-6196a000-6498-11eb-87c1-2fa4b2ec321d.png">
 
 #### ②オーナーの場合
 ##### (1) 出品
 ![demo](https://gyazo.com/02f428d1e20000a6d94c4a308e73a385/raw)
+![demo](https://gyazo.com/ab042b44c2cb04802a6744bc49458507/raw)
 
 ##### (2) 編集・削除
 ##### 削除ボタンを押せば削除される
 ![demo](https://gyazo.com/e792ec08afd36edd45b01a9b80ca0807/raw)
+![demo](https://gyazo.com/d6491bc2328f1f43e07425c0489c1377/raw)
+![demo](https://gyazo.com/d2e735041e71a384da4cf5f6941476e7/raw)
+![demo](https://gyazo.com/7a1178ed9567c020f0700e46a983f409/raw)
 
 #### ③お客さんの場合
 ##### (1) 注文
