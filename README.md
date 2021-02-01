@@ -1,6 +1,7 @@
 # カフェ
 
 ### カフェの出前を注文するアプリ
+![481d4b068c5ccc1dce480d64e663da1c](https://user-images.githubusercontent.com/75296964/106418821-8429b880-649a-11eb-9de8-a726a113c21b.jpg)
 
 # 概要
 
