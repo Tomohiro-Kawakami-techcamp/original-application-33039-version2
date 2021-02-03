@@ -60,3 +60,4 @@ gem 'image_processing', '~> 1.2'
 gem 'rails_admin', '~> 2.0.0.beta'
 gem 'rspec-rails', '~> 4.0.0'
 gem 'factory_bot_rails'
+gem "aws-sdk-s3", require: false
