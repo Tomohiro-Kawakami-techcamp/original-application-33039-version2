@@ -12,8 +12,8 @@
 # テスト用アカウント
 
 - URL：https://application-33039-version2.herokuapp.com/
-- 管理者:owner@fm.co.jp
-- お客さん:client1@fm.co.jp
+- 管理者:owner@fm.co.jp パスワード:owner1
+- お客さん:client1@fm.co.jp パスワード:client1
 
 # 利用方法
 
