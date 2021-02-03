@@ -10,6 +10,8 @@
 ### カフェを立ち上げたが、コロナ流行・・・
 
 # テスト用アカウント
+
+- URL：https://application-33039-version2.herokuapp.com/
 - 管理者:owner@fm.co.jp
 - お客さん:client1@fm.co.jp
 
